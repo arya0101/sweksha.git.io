@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <!-- meta charset -->
+        <meta charset="utf-8">
+        <!-- site title -->
+        <title>Sweksha</title>
+        <!-- meta description -->
+        <meta name="description" content="">
+        <!-- mobile viwport meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- fevicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- ================================
+        CSS Files
+        ================================= -->
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="css/themefisher-fonts.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/dark.css">
+        <link id="color-changer" rel="stylesheet" href="css/colors/color-0.css">
+    </head>
+
+    <body class="dark">
+
+        <div class="preloader">
+            <div class="loading-mask"></div>
+            <div class="loading-mask"></div>
+            <div class="loading-mask"></div>
+            <div class="loading-mask"></div>
+            <div class="loading-mask"></div>
+        </div>
+
+        
+        
+
+        <main class="site-wrapper">
+            <div class="pt-table">
+                <div class="pt-tablecell page-about relative">
+                    
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                                <div class="page-title text-center">
+                                    <h2>About <span class="primary">me</span> <span class="title-bg">ABOUT</span></h2>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6">
+                                <div class="about-author">
+                                    <figure class="author-thumb">
+                                        <img src="img/author.jpg" alt="">
+                                    </figure> <!-- /.author-bio -->
+                                    <div class="author-desc">
+                                        <p><b>Language:</b> English, Hindi</p>
+                                        <p><b>Working on:</b> Web development, Content Writing, Graphics designing</p>
+                                    </div>
+                                    <!-- /.author-desc -->
+                                </div> <!-- /.about-author -->
+                                <p>
+                                I am a web development and designing enthusiast focused on creating a user-friendly website with decent graphics interface.<br><br>
+
+                                I'm a published writer in two anthologies. I'm very fond of writing twisted lines evoked from simplest things and simplified words from most complex verse. I believe that words are more powerful when written and it has the ultimate power to beautifully express the silence.<br><br>
+
+                               I'm an artist who believes that an art piece can have multiple meanings to different people based on their perceptions. I have skills in sketching and painting.
+
+
+                                </p>
+                            </div> <!-- /.col -->
+
+                
+                            <div class="col-xs-12 col-md-6">
+                                <div class="section-title clear">
+                                    <h3>Recent Accomplishments</h3>
+                                </div>
+                                <div class="skill-wrapper">
+
+                                    <div class="progress clear">
+                                        <div class="skill-name">Web developer and designer intern at "The Sparks Foundation".</div>
+                                        <div class="skill-bar"><div class="w3-row-padding">
+                                          <div class="w3-container w3-third">
+                                            <img src="img/sparks.png" height="208.5 px" width="294.75 px" style="cursor:pointer" 
+                                            onclick="onClick(this)" class="w3-hover-opacity">
+                                          </div>
+                                           </div> 
+                                    </div> <!-- /.progress -->
+                                </div>
+                                    <div class="progress clear">
+                                        <div class="skill-name">Published with rosewood publication in "Dear Mom"</div>
+                                        <div class="skill-bar"><div class="w3-row-padding">
+                                            <div class="w3-container w3-third">
+                                            <img src="img/mom.png" height="208.5 px" width="294.75 px" style="cursor:pointer" 
+                                            onclick="onClick(this)" class="w3-hover-opacity">
+                                          </div>
+                                        </div>
+                                        </div>
+                                    </div> <!-- /.progress -->
+                                    <div class="progress clear">
+                                        <div class="skill-name">Published with The Write Order in " Remember the roses".</div>
+                                        <div class="skill-bar"><div class="w3-row-padding">
+                                            <div class="w3-container w3-third">
+                                            <img src="img/order.png" height="208.5 px" width="294.75 px" style="cursor:pointer" 
+                                            onclick="onClick(this)" class="w3-hover-opacity">
+                                          </div>
+                                        </div>
+                                        </div>
+                                    </div> <!-- /.progress -->
+                                    
+                                                                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                              <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                              <div class="w3-modal-content w3-animate-zoom">
+                                <img id="img01" style="width:100%">
+                              </div>
+                            </div>
+
+                            </div> <!-- /.col -->
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+
+                    <nav class="page-nav clear">
+                        <div class="container">
+                            <div class="flex flex-middle space-between">
+                                <span class="prev-page"><a href="index.html" class="link">&larr; Home Page</a></span>
+                                <span class="copyright hidden-xs">Copyright &copy; Portfolio @ Arya.</span>
+                                <span class="next-page"><a href="works.html" class="link">Next Page &rarr;</a></span>
+                            </div>
+                        </div>
+                        <!-- /.page-nav -->
+                    </nav>
+                    <!-- /.container -->
+                </div> <!-- /.pt-tablecell -->
+            </div> <!-- /.pt-table -->
+        </main> <!-- /.site-wrapper -->
+        
+        <!-- ================================
+        JavaScript Libraries
+        ================================= -->
+                <script>
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+        }
+        </script>           
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery-validation.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
